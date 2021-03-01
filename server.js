@@ -1,7 +1,7 @@
 
 let express = require('express');
 let app = express();
-let host = 3000
+let host = process.env.PORT || 3000;
 let server = app.listen(host)
 
 app.use(express.static('public'));
