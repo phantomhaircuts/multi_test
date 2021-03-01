@@ -9,7 +9,7 @@ app.use(express.static('public'));
 console.log("Socket server is running. localhost:" + host)
 
 let socket = require('socket.io')
-const io = require("socket.io")(httpServer, {
+const io = require("socket.io")(server, {
 	cors: {
 	  origin: "https://example.com",
 	  methods: ["GET", "POST"]
