@@ -6,7 +6,7 @@ function setup() {
 	socket = io.connect('https://peaceful-chamber-08183.herokuapp.com')
   socket.on('mouse', newDrawing);
   createCanvas(windowWidth, windowHeight);
-  background(51);
+  background(24,25,26);
   clr = random(360)
   noStroke()
 }
