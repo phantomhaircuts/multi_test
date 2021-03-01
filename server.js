@@ -9,12 +9,7 @@ app.use(express.static('public'));
 console.log("Socket server is running. localhost:" + host)
 
 let socket = require('socket.io')
-const io = require("socket.io")(server, {
-	cors: {
-	  origin: "https://peaceful-chamber-08183.herokuapp.com",
-	  methods: ["GET", "POST"]
-	}
-  });
+const io = require('socket.io')(server, { origins: '*:*'});
 
 io.sockets.on('connection', newConnection)
 
