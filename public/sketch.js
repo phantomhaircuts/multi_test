@@ -3,7 +3,7 @@ let socket
 function setup() {
 	let h = 400
 	let w = 400
-	socket = io.connect('http://localhost:3000')
+	socket = io.connect('https://peaceful-chamber-08183.herokuapp.com')
   socket.on('mouse', newDrawing);
   createCanvas(h, w);
   background(51);
