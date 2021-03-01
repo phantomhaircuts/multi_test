@@ -52,4 +52,5 @@ function upgradeColor(c){
 
 function windowResized() {
 	resizeCanvas(windowWidth, windowHeight);
+	background(24,25,26);
   }
